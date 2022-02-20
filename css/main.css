@@ -1,0 +1,146 @@
+:root{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --text-color: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background: var(--main-bg);
+    color: var(--text-color);
+    height: 100vh;
+    position: relative;
+}
+
+main{
+    width: 375px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 2;
+}
+
+.container{
+    width: 315px;
+    margin: auto;
+}
+
+.img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.main-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.layer{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 315px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00fff780;
+    opacity: 0;
+    z-index: 3;
+    transition-duration: 0.3s;       
+}
+
+.layer img{
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+.layer:hover{
+    opacity: 1;
+}
+
+.layer:hover img{
+    opacity: 1;
+}
+
+h2{
+    color: var(--white);
+    margin: 5px 0px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+h2:hover{
+    color: var(--cyan);
+}
+
+.description{
+    margin: 5px 0px;
+}
+
+.details{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line-color);
+    font-size: 20px;
+
+}
+
+.details img{
+    padding-right: 10px;
+    width: 15px;
+}
+
+.time img{
+    width: 25px;
+}
+
+.details img,
+.eq-comment,
+.time-comment{
+    display: inline;
+}
+
+.eq-comment{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    padding-top: 10px;
+}
+
+.footer img{
+    width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    transition-duration: 0.3s;
+}
+
+a:hover{
+    color: var(--cyan);
+}
